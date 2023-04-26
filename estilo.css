@@ -79,16 +79,15 @@ html {
 	text-align: center;
 	padding-top: 75px;
 	padding-bottom: 50px;
-	width: 100vw;
 }
 
 .nosotros__texto {
 	margin: auto;
-    border-radius: 15px;
-    background-color: white;
+    	border-radius: 15px;
+    	background-color: white;
 	align-items: center;
 	font-family: 'Montserrat', sans-serif;
-	position: 	relative;
+	position: relative;
 	min-width: 250px;
 	max-width: 400px;
 	padding: 15px;
