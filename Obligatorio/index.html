@@ -1,0 +1,130 @@
+<!doctype HTML>
+<html lang="es">
+<head>
+      <meta charset="utf-8" />
+      <title>Tus reclamos</title>
+	  <link rel = "stylesheet" href = "CSS/estilos.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<img id = "header__logo" alt = "Nuestro logo" src = "img/logo.png">
+		<a>Principal</a>
+		<a>Ver reclamos</a>
+		<a>Estadísticas</a>
+		<a>Agregar empresa</a>
+		<input type="text">
+		<button type="button"> <img id = "lupa-busqueda" src="img/lupa_busqueda.png"/></button>
+	</header>
+	<section>
+	
+		<article id = "introduccion">
+			<h3>Sitio para la gestión de reclamos</h3>
+			<h4>Este sitio permite ingresas reclamos o quejas y realizar diversas consultas.</h4>
+			<p>Sitio desarrollado en el curso de Programación I - 1er semestre 2023 - Universidad ORT Uruguay por:</p>
+			<div class = "estudiante">
+				<a href = "img/usuario.png"><img alt = "Lucas Tejería" src = "img/usuario.png"></a>
+				<p>Lucas Tejería, 307630</p>
+			</div>
+			<div class = "reclamo">
+				<a id = "introduccion__reclamo">Agrega tu reclamo aquí</a>
+			</div>
+		</article>
+		
+		<article id = "agregar-reclamo">
+			<h3>Agregar reclamo</h3>
+			<form class = "agregar-reclamo__todo">
+				<div class = "agregar-reclamo__formulario">
+					<label for="Nombre">Nombre:</label>
+					<input type = "text" id = "Nombre" name = "Nombre" placeholder= "Tu nombre..." required/>
+				</div>
+				
+				<div class = "agregar-reclamo__formulario">
+					<label for="empresa">Empresa</label>
+					<select name="empresas" id="empresa">
+						<option value = "TodoViajes SA">TodoViajes SA</option>
+						<option value = "Alfa">Alfa</option>
+					</select>
+				</div>
+				
+				<div class = "agregar-reclamo__formulario">
+					<label for = "titulo-reclamo">Reclamo:</label>
+					<input type = "text" id = "titulo-reclamo" name = "titulo-reclamo" placeholder = "El título es..." required/>
+				</div>
+
+				<div class = "agregar-reclamo__formulario">
+					<label for = "contenido-reclamo"></label>
+					<textarea id = "contenido-reclamo" placeholder = "Escriba su mensaje" required>y tu reclamo es...</textarea>
+				</div>
+
+				<button type="submit" id = "agregar-reclamo__boton">Agregar</button>
+			</form>
+		</article>
+
+		<article id = "reclamos-ingresados">
+			<h3>Reclamos ingresados (los más recientes primero)</h3>
+			<h4>Reclamo No. 2</h4>
+			<div class = "reclamos-ingresados__reclamo">
+				<div class = "reclamos-ingresados__contenido"></div>
+			</div>
+			<h4>Reclamo No. 1</h4>
+			<div class = "reclamos-ingresados__reclamo">
+				<div class = "reclamos-ingresados__contenido"></div>
+			</div>
+		</article>
+
+		<article id = "estadisticas">
+			<h3>Estadísticas</h3>
+			<h4>Empresas Seleccionadas</h4>
+			<div class = "estadisticas__div-caja">
+				<table class = "estadisticas__tabla">
+					<tr>
+						<th>Nombre</th>
+						<th>Dirección</th>
+						<th>Rubro</th>
+						<th>Cantidad</th>
+					</tr>
+					<tr>
+						<td>TodoViajes SA</td>
+						<td>Av Italia 51515</td>
+						<td>Viajes</td>
+						<td>4</td>
+					</tr>
+				</table>
+			</div>
+			<h4>Información General</h4>
+			<p>El promedio de las cantidades considerando todos los reclamos de todas las empresas es: A</p>
+			<p>Total de empresas registradas: A</p>
+			<h4>Empresas sin reclamos</h4>
+			<ul>
+				<li>Alfa (18 de Julio 12345) Rubro: Muebles</li>
+			</ul>
+			<h4>Rubros con máxima cantidad de reclamos</h4>
+			<ul>
+				<li>Viajes: cantidad 4</li>
+			</ul>
+		</article>
+		<article class = "agregar-empresa">
+			<h3>Agregar Empresa</h3>
+			<h4>Datos:</h4>
+			<form class = "agregar-empresa__todo">
+				<div class = "agregar-empresa__formulario">
+					<label for="nombre-empresa">Nombre:</label>
+					<input type = "text" id = "nombre-empresa" name = "nombre-empresa" required/>
+				</div>
+				<div class = "agregar-empresa__formulario">
+					<label for="direccion-empresa">Dirección:</label>
+					<input type = "text" id = "direccion-empresa" name = "direccion-empresa" required/>
+				</div>
+				<div class = "agregar-empresa__formulario">
+					<label for="rubro-nueva-emporesa">Rubro:</label>
+					<select name="rubro-nueva-emporesa" id="rubro-nueva-empresa">
+						<option value = "Sin datos">Sin datos</option>
+					</select>
+				</div>
+				<button type="submit" id = "agregar-empresa__boton">Agregar</button>
+			</form>
+		</article>
+	</section>
+</body>
+</html>
